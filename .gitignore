@@ -3,3 +3,7 @@ env.py
 .ipynb_checkpoints/
 __pycache__
 __pycache__/
+kindling.ipynb
+*lesson*
+*notes*
+*.csv
