@@ -9,12 +9,14 @@ def basic_clean(s):
     Takes a string and returns a normalized lowercase string 
     with special characters removed
     '''
+    #
+    s = s.lower()
     # normalize
     s = unicodedata.normalize('NFKD', s)\
     .encode('ascii', 'ignore')\
     .decode('utf-8', 'ignore')
     # remove special characters and lowercase
-    s = re.sub(r"[^a-z0-9'\s]", '', s).lower()
+    s = re.sub(r"[^a-z0-9'\s]", '', s)
     return s
 
 def tokenize(s):
